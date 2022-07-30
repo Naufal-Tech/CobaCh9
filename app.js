@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const db = require("./app/db");
-const detailpemain = require("./app/routes/detailpemain");
 
+const detailpemain = require("./app/routes/detailpemain");
 const authRouters = require("./app/routes/jwtAuth");
 
 app.use(cors());
@@ -13,5 +13,7 @@ app.use("/detailpemain", detailpemain);
 
 app.use("/auth", authRouters);
 // app.use("/dashboard", require("./routes/dashboard"));
+
+app.use(require("./app/routes/game.routes"));
 
 module.exports = app;
