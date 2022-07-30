@@ -1,4 +1,6 @@
-CREATE DATABASE profile-page;
+CREATE DATABASE challenge_sembilan;
+
+\c challenge_sembilan
 
 CREATE TABLE profile(
   id SERIAL PRIMARY KEY,

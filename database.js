@@ -5,7 +5,7 @@ const pool = new Pool({
   password: "admin",
   host: "localhost",
   port: 5432,
-  database: "profile-page",
+  database: "challenge_sembilan",
 });
 
 module.exports = pool;
